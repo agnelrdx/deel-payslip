@@ -173,9 +173,10 @@ ion-card-content .card__custom-amount:first-of-type {
 }
 
 .payslips__wrapper-label ion-label:first-of-type p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 5px 0;
   color: var(--ion-color-dark-tint);
+  line-height: 22px;
 }
 
 .error-wrapper {

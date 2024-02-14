@@ -67,7 +67,7 @@ const PayslipTable = ({ payslipData }: PayslipTableProps) => {
                   onClick={() => {
                     router.push(`/payslip/${item.id}`);
                   }}
-                  size="small"
+                  size={platform === "web" ? "small" : "default"}
                 >
                   View
                 </IonButton>
