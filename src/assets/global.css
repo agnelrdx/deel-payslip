@@ -216,6 +216,11 @@ ion-card-content .card__custom-amount:first-of-type {
   padding: 0 10px;
 }
 
+.platform-ios .payslip__page h2,
+.platform-ios .payslip__page ion-button {
+  padding: 0 15px;
+}
+
 ion-card-content .payslip__address {
   margin: 15px 0;
 }

@@ -27,3 +27,7 @@ yarn build:android
 ```
 yarn build:ios
 ```
+
+<img src="https://i.ibb.co/9WDJj4G/Screenshot-2024-02-14-at-1-29-09-PM.png" alt="android" />
+
+<img src="https://i.ibb.co/Vw7qPDG/Screenshot-2024-02-14-at-1-32-19-PM.png" alt="ios" />
