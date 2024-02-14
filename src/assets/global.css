@@ -84,7 +84,8 @@ p {
   justify-content: space-between;
 }
 
-.platform-android .page-wrapper.payslip__page {
+.platform-android .page-wrapper.payslip__page,
+.platform-ios .page-wrapper.payslip__page {
   justify-content: end;
 }
 
@@ -136,6 +137,10 @@ ion-card-content .card__custom-amount:first-of-type {
 
 .platform-android .payslip__page .payslips__wrapper {
   padding: 10px;
+  margin-bottom: 80px !important;
+}
+
+.platform-ios .payslip__page .payslips__wrapper {
   margin-bottom: 80px !important;
 }
 
