@@ -1,4 +1,4 @@
-import { IonContent } from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 
 import Header from "../components/Header";
 import WelcomeCard from "../components/WelcomeCard";
@@ -8,7 +8,7 @@ import { payslips } from "../utils";
 
 const Home = () => {
   return (
-    <>
+    <IonPage>
       <Header title="Dashboard" />
       <IonContent>
         <div className="page-wrapper">
@@ -17,7 +17,7 @@ const Home = () => {
           <PayslipTable payslipData={payslips} />
         </div>
       </IonContent>
-    </>
+    </IonPage>
   );
 };
 

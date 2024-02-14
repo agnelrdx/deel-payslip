@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useParams } from "react-router-dom";
-import { IonContent } from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 
 import { payslips } from "../utils";
 import Error from "./Error";
@@ -18,7 +18,7 @@ const Payslip = () => {
   if (!slip) return <Error />;
 
   return (
-    <>
+    <IonPage>
       <Header title={`Payslip - ${slip.company}`} />
 
       <IonContent>
@@ -31,7 +31,7 @@ const Payslip = () => {
           <PayslipComponent payslip={slip} />
         </div>
       </IonContent>
-    </>
+    </IonPage>
   );
 };
 

@@ -7,7 +7,6 @@ import {
   IonLabel,
   IonList,
   IonButton,
-  useIonRouter,
 } from "@ionic/react";
 import { Capacitor } from "@capacitor/core";
 import { useRef } from "react";
@@ -27,7 +26,6 @@ import useCardAnimation from "../hooks/useCardAnimation";
 
 const PayslipTable = ({ payslipData }: PayslipTableProps) => {
   const platform = Capacitor.getPlatform();
-  const router = useIonRouter();
   const cardEl = useRef<HTMLIonCardElement | null>(null);
   useCardAnimation(cardEl, 600);
 
@@ -64,9 +62,7 @@ const PayslipTable = ({ payslipData }: PayslipTableProps) => {
                   </>
                 )}
                 <IonButton
-                  onClick={() => {
-                    router.push(`/payslip/${item.id}`);
-                  }}
+                  routerLink={`/payslip/${item.id}`}
                   size={platform === "web" ? "small" : "default"}
                 >
                   View

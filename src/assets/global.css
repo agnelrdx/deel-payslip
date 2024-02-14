@@ -137,11 +137,11 @@ ion-card-content .card__custom-amount:first-of-type {
 
 .platform-android .payslip__page .payslips__wrapper {
   padding: 10px;
-  margin-bottom: 80px !important;
+  margin-bottom: 50px !important;
 }
 
 .platform-ios .payslip__page .payslips__wrapper {
-  margin-bottom: 80px !important;
+  margin-bottom: 50px !important;
 }
 
 .payslip__page .payslips__wrapper {
