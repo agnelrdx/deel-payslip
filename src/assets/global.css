@@ -1,0 +1,247 @@
+:root {
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-tint: #4c8dff;
+
+  --ion-color-secondary: #0cd1e8;
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0bb8cc;
+  --ion-color-secondary-tint: #24d6ea;
+
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #633ce0;
+  --ion-color-tertiary-tint: #7e57ff;
+
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ec254;
+  --ion-color-success-tint: #28e070;
+
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33939;
+  --ion-color-danger-tint: #f25454;
+
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+  --ion-background-color: #f4f4f6;
+  --ion-toolbar-background: #f4f4f6;
+
+  --text-color: rgb(51, 51, 51);
+}
+
+p {
+  color: var(--text-color);
+  font-weight: 500 !important;
+}
+
+.platform-web .page-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-wrapper.payslip__page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.platform-android .page-wrapper.payslip__page {
+  justify-content: end;
+}
+
+.platform-web ion-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.platform-web .page-wrapper ion-card {
+  min-width: 300px;
+  flex: 1;
+}
+
+.platform-android .page-wrapper {
+  padding: 8px;
+}
+
+.platform-android .page-wrapper ion-card {
+  margin-bottom: 20px;
+}
+
+.card__custom-header {
+  padding-bottom: 5px;
+}
+
+.chart-wrapper {
+  padding: 10px;
+}
+
+ion-card-content .card__custom-amount {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+ion-card-content .card__custom-amount:first-of-type {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.payslips__wrapper {
+  flex-basis: 100% !important;
+  margin-bottom: 100px !important;
+}
+
+.platform-web .payslip__page .payslips__wrapper {
+  margin: 0 100px;
+  padding: 10px;
+}
+
+.platform-android .payslip__page .payslips__wrapper {
+  padding: 10px;
+  margin-bottom: 80px !important;
+}
+
+.payslip__page .payslips__wrapper {
+  margin-top: 25px !important;
+  background-color: #fff;
+}
+
+.payslip__page .payslips__wrapper p {
+  margin: 8px 0;
+}
+
+.platform-ios .page-wrapper {
+  margin-bottom: 100px;
+}
+
+.payslips__wrapper ion-card-header {
+  padding-bottom: 0;
+}
+
+.payslips__wrapper-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.payslips__wrapper-label ion-label {
+  width: 200px;
+  padding: 10px 0;
+}
+
+.platform-web .payslips__wrapper-label ion-label {
+  width: 200px;
+}
+
+.payslips__wrapper-label ion-label:first-of-type p {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  color: var(--ion-color-dark-tint);
+}
+
+.error-wrapper {
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.error-wrapper h2 {
+  font-size: 6rem;
+  margin: -150px 0 0;
+}
+
+.error-wrapper p {
+  margin-top: 0;
+}
+
+.payslip__image {
+  width: 80px;
+}
+
+.payslip__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payslip__page h2 {
+  line-height: 36px;
+  padding: 0 10px;
+}
+
+.payslip__page ion-button {
+  height: 40px;
+  position: relative;
+  top: 10px;
+  padding: 0 10px;
+}
+
+ion-card-content .payslip__address {
+  margin: 15px 0;
+}
+
+ion-card-content .payslip__address p {
+  margin: 3px 0 !important;
+}
+
+.payslip__signature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.payslip__signature {
+  width: 200px;
+}
+
+.payslip__amount {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.payslip__amount p {
+  font-size: 1.1rem;
+}
+
+ion-toast {
+  text-align: center;
+}
